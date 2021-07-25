@@ -8,9 +8,12 @@ import { ImageItem } from '../model/option-model';
 })
 export class ImageSelectDropDownComponent implements OnInit {
   @Input() list = [];
-  showDropDown:boolean=true;
+  showDropDown:boolean=false;
   currentSelected:ImageItem;
   constructor() {}
 
   ngOnInit() {}
+  onItemSecetion(item){
+    this.currentSelected=item;
+  }
 }

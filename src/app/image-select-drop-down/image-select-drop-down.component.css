@@ -34,4 +34,8 @@
 }
 .drop-show label span{
   display:inline-block;
+  vertical-align: middle;
+}
+.mr1{
+  margin-right: 5px;
 }
