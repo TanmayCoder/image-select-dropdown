@@ -14,6 +14,7 @@ export class ImageSelectDropDownComponent implements OnInit {
 
   ngOnInit() {}
   onItemSecetion(item){
+    this.showDropDown=false;
     this.currentSelected=item;
   }
 }

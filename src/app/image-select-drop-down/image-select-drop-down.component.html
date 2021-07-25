@@ -2,12 +2,12 @@
   <div (mouseleave)="showDropDown = false">
     <button class="drop-toggle btn  flat" (click)="showDropDown=!showDropDown">
     <span *ngIf="!currentSelected">Select</span>
-    <span *ngIf="currentSelected"> <img [src]="currentSelected.imageUrl" class="mr1">{{currentSelected.name}}</span>
+    <span *ngIf="currentSelected"> <img [src]="currentSelected.imageUrl" class="mr1"><span class="vl-top">{{currentSelected.name}}</span></span>
 </button>
     <div class="drop-show" *ngIf="showDropDown">
       <label *ngFor="let a of list" (click)='onItemSecetion(a)'>
     <img [src]="a.imageUrl" class="mr1">
-    <span>{{a.name}}</span>
+    <span class="vl-top">{{a.name}}</span>
 </label>
     </div>
   </div>
