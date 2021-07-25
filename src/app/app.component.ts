@@ -12,10 +12,10 @@ export class AppComponent  {
   constructor(){
     this.list = 
     [
-      {name :'India',value:'IN',imageUrl:'./assets/images/in.png'},
-      {name :'United States',value:'US',imageUrl:'./assets/images/us.png'},
-      {name :'China',value:'CN',imageUrl:'./assets/images/cn.png'},
-      {name :'France',value:'FR',imageUrl:'./assets/images/fr.png'}
+      {name :'India',value:'IN',imageUrl:'https://raw.githubusercontent.com/TanmayCoder/ImagesCDN/main/flags-icons/in.png'},
+      {name :'United States',value:'US',imageUrl:'https://raw.githubusercontent.com/TanmayCoder/ImagesCDN/main/flags-icons/us.png'},
+      {name :'China',value:'CN',imageUrl:'https://raw.githubusercontent.com/TanmayCoder/ImagesCDN/main/flags-icons/cn.png'},
+      {name :'France',value:'FR',imageUrl:'https://raw.githubusercontent.com/TanmayCoder/ImagesCDN/main/flags-icons/fr.png'}
     ]
   }
 }

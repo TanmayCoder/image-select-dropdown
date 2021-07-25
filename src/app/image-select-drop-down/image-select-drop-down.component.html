@@ -1,7 +1,14 @@
 <div>
-  <div (mouseleave)="showDropDown = false">
-    <button class="drop-toggle btn btn-primary flat" (click)="showDropDown=!showDropDown">
-
+  <div>
+    <button class="drop-toggle btn  flat" (click)="showDropDown=!showDropDown">
+    <span *ngIf="!currentSelected">Select</span>
+    <span *ngIf="currentSelected">{{currentSelected.name}}</span>
 </button>
+    <div class="drop-show" *ngIf="showDropDown">
+      <label *ngFor="let a of list">
+    <img [src]="a.imageUrl" class="mt-1">
+    <span>{{a.name}}</span>
+</label>
+    </div>
   </div>
 </div>

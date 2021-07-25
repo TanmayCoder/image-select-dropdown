@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ImageItem } from '../model/option-model';
 
 @Component({
   selector: 'app-image-select-drop-down',
@@ -7,7 +8,8 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ImageSelectDropDownComponent implements OnInit {
   @Input() list = [];
-  showDropDown:boolean=false;
+  showDropDown:boolean=true;
+  currentSelected:ImageItem;
   constructor() {}
 
   ngOnInit() {}
