@@ -12,10 +12,10 @@ export class AppComponent  {
   constructor(){
     this.list = 
     [
-      {name :'India',value:'IN',imageUrl:''},
-      {name :'United States',value:'US',imageUrl:''},
-      {name :'China',value:'CN',imageUrl:''},
-      {name :'France',value:'FR',imageUrl:''}
+      {name :'India',value:'IN',imageUrl:'./assets/images/in.png'},
+      {name :'United States',value:'US',imageUrl:'./assets/images/us.png'},
+      {name :'China',value:'CN',imageUrl:'./assets/images/cn.png'},
+      {name :'France',value:'FR',imageUrl:'./assets/images/fr.png'}
     ]
   }
 }
