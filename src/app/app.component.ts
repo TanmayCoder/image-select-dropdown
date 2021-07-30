@@ -18,4 +18,7 @@ export class AppComponent  {
       {name :'France',value:'FR',imageUrl:'https://raw.githubusercontent.com/TanmayCoder/ImagesCDN/main/flags-icons/fr.png'}
     ]
   }
+  itemSelectedEvent(item:ImageItem){
+    this.name=item.name;
+  }
 }

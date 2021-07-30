@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { ImageItem } from '../model/option-model';
 
 @Component({
@@ -8,6 +8,7 @@ import { ImageItem } from '../model/option-model';
 })
 export class ImageSelectDropDownComponent implements OnInit {
   @Input() list = [];
+  @Output() itemSelectionEvent = new EventEmitter();
   showDropDown:boolean=false;
   currentSelected:ImageItem;
   constructor() {}
@@ -16,5 +17,6 @@ export class ImageSelectDropDownComponent implements OnInit {
   onItemSecetion(item){
     this.showDropDown=false;
     this.currentSelected=item;
+    this.itemSelectionEvent.emit(this.currentSelected);
   }
 }
